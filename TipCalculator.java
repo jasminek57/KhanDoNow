@@ -22,7 +22,11 @@ public class TipCalculator {
 
         double tip = (percent * totalPrice) / 100;
         System.out.print("Tip amount being added to bill: $" + tip);
+        System.out.print("Total bill including tip: " + (tip + totalPrice));
         double singularTip = tip / people;
+        System.out.print("Per person tip amount: " + singularTip);
+
+
 
     }
 }
