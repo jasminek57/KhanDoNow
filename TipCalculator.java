@@ -4,7 +4,7 @@ public class TipCalculator {
         Scanner scan = new Scanner(System.in);
         System.out.print("Welcome to Giggle Resturaunt!");
         System.out.print("How many people are eating today? ");
-        int peopleNum = scan.nextInt();
+        int people = scan.nextInt();
         System.out.print("Enter your tip percentage as an integer: ");
         int percent = scan.nextInt();
         double totalPrice = 0;
@@ -14,6 +14,9 @@ public class TipCalculator {
             double price = scan.nextDouble();
             totalPrice += price;
         }
+
+        double tip = (percent * totalPrice) / 100;
+        double singularTip = tip / people;
 
     }
 }
