@@ -19,6 +19,8 @@ public class TipCalculator {
             }
         }
 
+        System.out.println("------------------------------------------------------------------");
+
         double perPerson = totalPrice / people;
         System.out.println("Price before tip: $" + totalPrice);
         System.out.println("Price per person before tip: $" + perPerson);
