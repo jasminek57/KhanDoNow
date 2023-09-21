@@ -5,13 +5,16 @@ public class TipCalculator {
         System.out.print("Welcome to Giggle Resturaunt!");
         System.out.print("How many people are eating today? ");
         int peopleNum = scan.nextInt();
+        System.out.print("Enter your tip percentage as an integer: ");
+        int percent = scan.nextInt();
+        double totalPrice = 0;
 
-//        while (number % 2 != 1) {
-//            System.out.print("No silly, i said ODD not even! Try again: ");
-//            number = scan.nextInt();
-//        }
-//
-//        System.out.print("Done!");
+        while (itemv != -1) {
+            System.out.print("Enter the cost of the item you order (enter -1 to stop): ");
+            double price = scan.nextDouble();
+            totalPrice += price;
+        }
+
     }
 }
 
